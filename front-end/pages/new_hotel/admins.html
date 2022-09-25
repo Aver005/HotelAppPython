@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/App.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="/js/utils.js"></script>
+    <title>Hotel App: Новый отель</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Создание нового отеля</h1>
+        <div class="block">
+            <h2>Администрация</h2>
+
+            <div class="buttons-block">
+                <button onclick="add_new_admin();">Добавить администратора</button>
+            </div>
+
+            <div class="admins-list" id="admins-list">
+                <div class="admin-profile" id="admin">
+                    <p>
+                        <b>Логин: </b>
+                        <input required type="text" placeholder="Введите логин">
+                    </p>
+                    <p>
+                        <b>Пароль: </b>
+                        <input required type="password" placeholder="Введите пароль">
+                    </p>
+
+                    <button onclick="remove_admin(this);">x</button>
+                </div>
+            </div>
+
+            <div class="buttons-block">
+                <a href="info.html"><button>Назад</button></a>
+                <button onclick="create_hotel();">Создать отель</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/new_hotel/admins.js"></script>
+</body>
+</html>
